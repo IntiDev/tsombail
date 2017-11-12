@@ -55,7 +55,7 @@ swal({
   showConfirmButton: false,
   icon: "success",
   })
-setTimeout(redireccionar,4000);
+//setTimeout(redireccionar,4000);
 
 }
 const redireccionar = ()=>{
@@ -68,7 +68,7 @@ const addNewUser = ()=>{
   if(isValidEmail(email)){
     const userNew = new User( nameUser,email,passwordNewUser);
     users.push(userNew);
-    redireccionar();
+    //redireccionar();
   }else{
     alert("The email is invalid")
     swal({
@@ -113,7 +113,7 @@ usuarios.forEach(function(usuario){
   });
   for(let i = 0 ; i<usuarios.length ; i++){
       if(usuarios[i].email == userName &&  usuarios[i].password==userPassWord){
-        redireccionar();
+        //redireccionar();
       }
   }
 }
