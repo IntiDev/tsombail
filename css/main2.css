@@ -76,7 +76,7 @@ button.btnAceptar{
      color: #ffffff ;
      margin-top: 10px;
      margin-bottom: 10px;
-     border-radius: 12px
+     border-radius: 12px;
 }
 /*div.card{
   position: relative;
@@ -102,12 +102,11 @@ div.cardImg img:hover{
     background-size:auto;
     background-repeat: no-repeat;
 }*/
-div.compras::before{
-  content: '';
+div.compras:{
+  /*content: '';
   margin: 0 auto;
   background-image: url("../img/plecamini.png");
-
-  display: block;
+  display: block;*/
 
 }
 div.compras p {
@@ -123,23 +122,23 @@ div.compras p i{
  margin-right: 2px;
  margin-bottom: 2px;
 }
-}
+
 button.btnCalcular{
-     font-family: 'Oswald', sans-serif;
-     font-size: 1.4em;
-     transition: all .3s ease;
-       text-align: center;
-     border: 2px solid   #9dc40e ;
-     background-color:  #9dc40e;
-     color: #ffffff ;
-     margin-top: 10px;
-     margin-bottom: 10px;
-     border-radius: 12px;
-     width: 15%;
-     float: left;
-  }
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.0em;
+  transition: all .3s ease;
+  width: 100%;
+  text-align: center;
+  border: 2px solid   #9dc40e ;
+  background-color:  #9dc40e;
+  color: #ffffff ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px
+
+}
 button.btnCalcular:hover{
     background-color: #F53C1E;
     color: #ffffff;
-    border: 2px solid  #F53C1E ;
+    border: 2px solid  #F53C1E;
 }
