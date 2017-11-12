@@ -1,3 +1,13 @@
+// Array of users
+const users=[{name:"Analin", email:"foglzerika@gmail.com",password:"1234"}];
+// Constructor user
+const User =class{
+    constructor(name,email,password){
+      this.name=name;
+      this.email=email;
+      this.password=password;
+    }
+}
 // Initialize Firebase
 const config = {
   apiKey: "AIzaSyAUND5wUBFDHs--tuXEUZ4YDJvni58Fafs",
@@ -49,14 +59,57 @@ setTimeout(redireccionar,4000);
 
 }
 const redireccionar = ()=>{
-  window.location="views/main.html";
+  window.location="views/main2.html";
 }
+const addNewUser = ()=>{
+  const nameUser = document.getElementById('nameNewUser').value;
+  const email=document.getElementById('emailNewUser').value;
+  const passwordUser=document.getElementById('passwordNewUser').value;
+  if(isValidEmail(email)){
+    const userNew = new User( nameUser,email,passwordNewUser);
+    users.push(userNew);
+    redireccionar();
+  }else{
+    alert("The email is invalid")
+    swal({
+      timer: 3000,
+      title: `El usuario y/o correo es incorrecto`,
+      showConfirmButton: false,
+      icon: "fail",
+      })
+  }
 
+}
+const checkCount = ()=>{
+  const userName = document.getElementById("userName").value;
+  const userPassWord = document.getElementById("userPassWord").value;
+  // console.log(`${userName} ${userPassWord}`);
+  validCount(userName,userPassWord)
+  console.log(users)
+
+
+}
+const validCount= (userName,userPassWord)=>{
+  for(let i = 0 ; i < users.length ; i++){
+
+    if(users[i].name == userName && users[i].password == userPassWord){
+      redireccionar();
+    }else{
+
+      swal({
+        timer: 2000,
+        title: `El usuario y/o correo es incorrecto`,
+        showConfirmButton: false,
+        icon: "fail",
+        })
+    }
+  }
+}
 function mostrarUsuarios(usuarios) {
 const userName = document.getElementById("userName").value;
 const userPassWord = document.getElementById("userPassWord").value;
 usuarios.forEach(function(usuario){
-  console.log(usuario);
+  // console.log(usuario);
   });
   for(let i = 0 ; i<usuarios.length ; i++){
       if(usuarios[i].email == userName &&  usuarios[i].password==userPassWord){
@@ -64,6 +117,8 @@ usuarios.forEach(function(usuario){
       }
   }
 }
+const btnLogin=document.getElementById("go")
+btnLogin.addEventListener("click",checkCount);
 const guardarDatos=(usuarios) =>{
 // Para guardar en base de dato usar el metodo .set()
 database.ref("/").set(usuarios);
