@@ -1,11 +1,23 @@
 nav{
-  background-color: #007dad;
-  height: 10vh;
-
+  background-color: #9dc40e;
 }
+
+.whitee{
+  color: white !important;
+}
+
+/*MARGENES*/
+.ml-10{
+  margin-left: 10%;
+}
+
+.mr-10{
+  margin-right: 10%;
+}
+
 .ofertas{
-  height: 50vh;
-  background-color: gray;
+  height: 45vh;
+  background-color: lightgray;
   position: relative;
 
 }
@@ -22,12 +34,10 @@ nav{
   position: absolute;
 }
 .carousel-control-prev-icon{
-  margin-top: 25vh;
   position: absolute;
 }
 .carousel-control-next-icon{
   position: absolute;
-  margin-top: 25vh;
 }
 .provedores{
   margin-top: 10px;
