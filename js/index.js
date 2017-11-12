@@ -35,13 +35,23 @@ const isValidEmail = (mail)=>{
 return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(mail);
 }
 const creaUsuarioNuevo = (nombre,correo)=>{
-alert(`El usuario ${nombre} ha sido creado
-exitosamente con la cuenta ${correo}`);
-setTimeout(redireccionar,1000);
+// alert(`El usuario ${nombre} ha sido creado
+// exitosamente con la cuenta ${correo}`);
+
+swal({
+  timer: 3000,
+  title: `El usuario ${nombre} ha sido creado
+  exitosamente con la cuenta ${correo}`,
+  showConfirmButton: false,
+  icon: "success",
+  })
+setTimeout(redireccionar,4000);
+
 }
 const redireccionar = ()=>{
-window.location="../views/mail.html";
+  window.location="views/main.html";
 }
+
 function mostrarUsuarios(usuarios) {
 const userName = document.getElementById("userName").value;
 const userPassWord = document.getElementById("userPassWord").value;
