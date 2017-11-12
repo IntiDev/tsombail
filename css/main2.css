@@ -19,6 +19,19 @@ nav{
   height: 45vh;
   background-color: lightgray;
   position: relative;
+
+}
+.img1{
+  background-image: url("../img/hack1.jpg");
+
+  /*background-position: top center;*/
+  background-size:auto;
+  background-repeat: no-repeat;
+  /*background-color: ;*/
+  background-position: bottom center;
+}
+.carousel-item active{
+  position: absolute;
 }
 .carousel-control-prev-icon{
   position: absolute;
@@ -147,6 +160,7 @@ button.btnCalcular{
   border-radius: 12px
 
 }
+
 button.btnCalcular:hover{
     background-color: #F53C1E;
     color: #ffffff;
