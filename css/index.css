@@ -4,11 +4,14 @@ html{
 }
 
 .hero{
-  /*background-image: url(../img/back2.jpg);*/
+  background-image: url(../img/city.png);
   height: 100vh;
-  background-position: top center;
-  background-size: cover;
-  background-color: #f52f8f;
+  /*background-position: top center;*/
+  background-size:auto;
+  background-repeat: no-repeat;
+  /*background-color: ;*/
+  background-position: bottom center;
+
 }
 .contenido-header{
   padding-top: 50px;
@@ -21,9 +24,7 @@ html{
   font-size: 1.5em;
   margin-right: 20px;
 }
-.redes-sociales a:hover{
-  color:  #cc7d01;
-}
+
 .informacion{
   text-align: center;
   color: #ffffff;
@@ -36,7 +37,7 @@ html{
   font-size: 7.0vw;
   /*color:#f52f8f;*/
   /*color:  #0b277b;*/
-  color: white;
+  color: #007dad;
 }
 div.input{
   padding-top: 20px;
@@ -63,8 +64,8 @@ button.btnLogin{
      transition: all .3s ease;
      width: 100%;
      text-align: center;
-     border: 2px solid  #0b277b ;
-     background-color: #0b277b;
+     border: 2px solid   #9dc40e ;
+     background-color:  #9dc40e;
      color: #ffffff ;
      margin-top: 10px;
      margin-bottom: 10px;
@@ -82,7 +83,15 @@ button.btnLogin:hover{
   color: #fe4918;
   text-align: center;
 }
-/*insigts.html*/
+/*login*/
+h2::after{
+  content: '';
+margin: 0 auto;
+background-image: url("../img/plecamini.png");
+height: 30px;
+width: 100px;
+display: block;
+}
 .titulo{
   font-family: 'Oswald', sans-serif;
   font-size: 1.4em;
@@ -95,4 +104,13 @@ button.btnLogin:hover{
 }
 #exampleModalLabel{
   text-align: center;
+}
+/*Splash*/
+.splash{
+  background-image: url(../img/back.gif);
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-color: #f52f8f;
+
 }
