@@ -1,0 +1,24 @@
+body{
+  background-color: #5692AC;
+}
+
+#tarjeta-principal{
+  margin-top: 5%;
+  margin-left: 8%;
+}
+
+
+#img-principal{
+  width:150px;
+  height: 150px;
+}
+
+.mt-5{
+  margin-top: 5%;
+}
+
+/*Categoria 1*/
+h3{
+  color: white;
+  text-align: center;
+}
