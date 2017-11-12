@@ -1,12 +1,25 @@
 nav{
   background-color: #007dad;
   height: 10vh;
-  margin-bottom: 20px;
+
 }
 .ofertas{
   height: 50vh;
   background-color: gray;
   position: relative;
+
+}
+.img1{
+  background-image: url("../img/hack1.jpg");
+
+  /*background-position: top center;*/
+  background-size:auto;
+  background-repeat: no-repeat;
+  /*background-color: ;*/
+  background-position: bottom center;
+}
+.carousel-item active{
+  position: absolute;
 }
 .carousel-control-prev-icon{
   margin-top: 25vh;
@@ -137,6 +150,7 @@ button.btnCalcular{
   border-radius: 12px
 
 }
+
 button.btnCalcular:hover{
     background-color: #F53C1E;
     color: #ffffff;
