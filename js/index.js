@@ -73,7 +73,7 @@ const addNewUser = ()=>{
     alert("The email is invalid")
     swal({
       timer: 3000,
-      title: `El usuario y/o correo es incorrecto`,
+      title: `El usuario y/o contraseña es incorrecto`,
       showConfirmButton: false,
       icon: "fail",
       })
