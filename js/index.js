@@ -98,7 +98,7 @@ const validCount= (userName,userPassWord)=>{
 
       swal({
         timer: 2000,
-        title: `El usuario y/o correo es incorrecto`,
+        title: `El usuario y/o contraseña es incorrecto`,
         showConfirmButton: false,
         icon: "fail",
         })
